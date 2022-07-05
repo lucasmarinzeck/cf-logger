@@ -1,0 +1,26 @@
+{
+  "name": "@marinzeck.pixter/cf-logger",
+  "version": "1.0.0",
+  "description": "Log lib",
+  "main": "dist/index.js",
+  "types": "dist/index.js",
+  "scripts": {
+    "build": "tsc --declaration"
+  },
+  "keywords": [
+    "logs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucasmarinzeck/cf-logger.git"
+  },
+  "author": "Lucas Marinzeck <lucas.marinzeck@pixter.com.br, lucasmarinzeck.dev@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.42",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "pino": "^8.0.0"
+  }
+}
