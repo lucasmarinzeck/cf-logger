@@ -26,7 +26,7 @@ export class Logger {
     let finalMessage = message;
 
     if (typeof message === 'object' && opts?.blackList) {
-      const messageCopy = { ...message };
+      const messageCopy = JSON.parse(JSON.stringify(message));
 
       Logger.removeFields(messageCopy, opts.blackList);
 
@@ -51,7 +51,7 @@ export class Logger {
     let finalMessage = message;
 
     if (typeof message === 'object' && opts?.blackList) {
-      const messageCopy = { ...message };
+      const messageCopy = JSON.parse(JSON.stringify(message));
 
       Logger.removeFields(messageCopy, opts.blackList);
 
@@ -76,7 +76,7 @@ export class Logger {
     let finalMessage = message;
 
     if (typeof message === 'object' && opts?.blackList) {
-      const messageCopy = { ...message };
+      const messageCopy = JSON.parse(JSON.stringify(message));
 
       Logger.removeFields(messageCopy, opts.blackList);
 
@@ -101,7 +101,7 @@ export class Logger {
     let finalMessage = message;
 
     if (typeof message === 'object' && opts?.blackList) {
-      const messageCopy = { ...message };
+      const messageCopy = JSON.parse(JSON.stringify(message));
 
       Logger.removeFields(messageCopy, opts.blackList);
 
